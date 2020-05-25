@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/jsonfixer/static/css/main.70e743ab.chunk.css",
-    "main.js": "/jsonfixer/static/js/main.ff20680e.chunk.js",
-    "main.js.map": "/jsonfixer/static/js/main.ff20680e.chunk.js.map",
+    "main.js": "/jsonfixer/static/js/main.434a420f.chunk.js",
+    "main.js.map": "/jsonfixer/static/js/main.434a420f.chunk.js.map",
     "runtime-main.js": "/jsonfixer/static/js/runtime-main.02b1ed74.js",
     "runtime-main.js.map": "/jsonfixer/static/js/runtime-main.02b1ed74.js.map",
-    "static/js/2.0fb64166.chunk.js": "/jsonfixer/static/js/2.0fb64166.chunk.js",
-    "static/js/2.0fb64166.chunk.js.map": "/jsonfixer/static/js/2.0fb64166.chunk.js.map",
+    "static/js/2.2f09a524.chunk.js": "/jsonfixer/static/js/2.2f09a524.chunk.js",
+    "static/js/2.2f09a524.chunk.js.map": "/jsonfixer/static/js/2.2f09a524.chunk.js.map",
     "index.html": "/jsonfixer/index.html",
-    "precache-manifest.a6ce85533c1cda8a3d20a340d79880b7.js": "/jsonfixer/precache-manifest.a6ce85533c1cda8a3d20a340d79880b7.js",
+    "precache-manifest.4af7aef8911fcc2797c5485a3379158f.js": "/jsonfixer/precache-manifest.4af7aef8911fcc2797c5485a3379158f.js",
     "service-worker.js": "/jsonfixer/service-worker.js",
     "static/css/main.70e743ab.chunk.css.map": "/jsonfixer/static/css/main.70e743ab.chunk.css.map",
-    "static/js/2.0fb64166.chunk.js.LICENSE.txt": "/jsonfixer/static/js/2.0fb64166.chunk.js.LICENSE.txt",
+    "static/js/2.2f09a524.chunk.js.LICENSE.txt": "/jsonfixer/static/js/2.2f09a524.chunk.js.LICENSE.txt",
     "static/media/iossa.gif": "/jsonfixer/static/media/iossa.d999c4f9.gif",
     "static/media/logo-iossa-black.png": "/jsonfixer/static/media/logo-iossa-black.99f3be65.png"
   },
   "entrypoints": [
     "static/js/runtime-main.02b1ed74.js",
-    "static/js/2.0fb64166.chunk.js",
+    "static/js/2.2f09a524.chunk.js",
     "static/css/main.70e743ab.chunk.css",
-    "static/js/main.ff20680e.chunk.js"
+    "static/js/main.434a420f.chunk.js"
   ]
 }
