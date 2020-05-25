@@ -1,6 +1,6 @@
 {
   "homepage": "http://dislocked.github.io/jsonfixer",
-  "name": "IOSoccer Json Fixer",
+  "name": "IOSoccerJsonFixer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
