@@ -1,2 +1,0 @@
-cd jsonfixer
-npm start
