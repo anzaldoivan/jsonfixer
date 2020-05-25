@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useInput } from '../hooks/input-hook';
+import { useClipboard } from 'use-clipboard-copy';
 
 import '../App.css';
 
@@ -42,6 +43,7 @@ function Fixer(){
     const [secondsplayed, setSecondsplayed] = useState(0);
     const [minutes, setMinutes] = useState(0);
     const [totalmatches, setTotalmatches] = useState(0);
+    const [result, setResult] = useState(0);
 
     const { value, bind, reset } = useInput('');
 
@@ -50,6 +52,14 @@ function Fixer(){
       alert(`Submitting Name ${value}`);
       reset();  
     }
+
+    const clipboard = useClipboard();
+
+    const handleClick = React.useCallback(
+      () => {
+        clipboard.copy(`{"info":{"startSecond":${startsecond},"endSecond":${endsecond},"team":"${team}","position":"${position}"},"statistics":[${redcards},${yellowcards},${fouls},${foulsSuffered},${tackles},${tacklescompleted},${goalsconceded},${shots},${shotsontarget},${Math.round((passes*passescompleted)/100)},${interceptions},${offsides},${goals},${owngoals},${assists},${passes},${freekicks},${penalties},${corners},${throwins},${saves},${goalkicks},${Math.round(minutes*60*(possession/100))},${distance*1000},${Math.round((saves*savescaught)/100)}]},`); // programmatically copying a value
+      },
+    );
 
     return(
       <div>
@@ -271,6 +281,7 @@ function Fixer(){
           <p style={{textAlign: 'center', marginTop: '10px'}}>Minutos jugados = {(endsecond - startsecond)/60} / Minutos Reales (10 min por tiempo) = {((endsecond - startsecond)/60)*10/45}</p>
           <p style={{textAlign: 'center', marginTop: '30px'}}>Resultado Final:</p>
           <p style={{textAlign: 'center', marginTop: '10px'}}>{`{"info":{"startSecond":${startsecond},"endSecond":${endsecond},"team":"${team}","position":"${position}"},"statistics":[${redcards},${yellowcards},${fouls},${foulsSuffered},${tackles},${tacklescompleted},${goalsconceded},${shots},${shotsontarget},${Math.round((passes*passescompleted)/100)},${interceptions},${offsides},${goals},${owngoals},${assists},${passes},${freekicks},${penalties},${corners},${throwins},${saves},${goalkicks},${Math.round(minutes*60*(possession/100))},${distance*1000},${Math.round((saves*savescaught)/100)}]},`}</p>
+          <button onClick={handleClick} style={{marginTop: '10px', position: 'relative', top: '50%', left: '50%', marginRight: '-50%', transform: 'translate(-50%, -50%)'}}>Copiar Resultado</button>
           </div>
         </div>
       </div>
